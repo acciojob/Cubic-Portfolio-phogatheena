@@ -23,7 +23,7 @@
         }
         
         .back {
-            transform: translateZ(-100px) rotateY(180deg);
+            transform:matrix3d(-1, 0, -1.22465e-16, 0, 0, 1, 0, 0, 1.22465e-16, 0, -1, 0, 1.83697e-14, 0, -100, 1);
         }
         
         .top {
