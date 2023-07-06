@@ -35,7 +35,8 @@
         }
         
         .left {
-            transform: rotateY(90deg) translateZ(100px);
+            transform: matrix3d(6.12323e-17, 0, 1, 0, 0, 1, 0, 0, -1, 0, 6.12323e-17, 0, -100, 0, 6.12323e-15, 1);
+
         }
         
         .right {
