@@ -1,2 +1,48 @@
 
 /* Your CSS Code here. */
+ .container {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: rotate 10s infinite linear;
+        }
+        
+        .face {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 1px solid #000;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f1f1f1;
+        }
+        
+        .front {
+            transform: translateZ(100px);
+        }
+        
+        .back {
+            transform: translateZ(-100px) rotateY(180deg);
+        }
+        
+        .top {
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        
+        .bottom {
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        
+        .left {
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        
+        .right {
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        
+        @keyframes rotate {
+            0% { transform: rotateX(0) rotateY(0) rotateZ(0); }
+            100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+        }
