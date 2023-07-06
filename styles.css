@@ -1,6 +1,6 @@
 
 /* Your CSS Code here. */
- .scene-1{
+ .cube-1{
             width: 200px;
             height: 200px;
             position: relative;
@@ -35,7 +35,7 @@
         }
         
         .left {
-            transform: rotateY(-90deg) translateZ(100px);
+            transform: rotateY(90deg) translateZ(100px);
         }
         
         .right {
